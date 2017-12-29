@@ -1,0 +1,24 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+
+```{r dati}
+dati<-read.csv(file='../data/cars.csv',header = TRUE, sep=',')
+```
+
+## Including Plots
+
+
+
+```{r graf, echo=FALSE}
+pairs(dati)
+```
+
